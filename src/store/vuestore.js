@@ -1,14 +1,16 @@
 export var store = {
   debug: true,
   state: {
-    message: 'Hello!'
+    message: 'Hello!',
+    direction: 'in'
   },
   setMessageAction (newValue) {
-    if (this.debug) console.log('setMessageAction triggered with', newValue)
     this.state.message = newValue
   },
   clearMessageAction () {
-    if (this.debug) console.log('clearMessageAction triggered')
     this.state.message = ''
-  }
+  },
+  directionAction (val) {
+    this.state.direction= val
+  },
 }
