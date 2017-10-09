@@ -7,10 +7,11 @@
     <router-link to='/trans'>transition</router-link>
     <router-link to='/render'>render</router-link>
     <router-link to='/router/one/one'>router</router-link>
+    <router-link to='/object'>object</router-link>
+     <router-link to='/vuexload'>vuexload</router-link>
     <transition :name="'route-'+$root.$data.sharedState.direction">
         <router-view></router-view>
     </transition>
-
   </div>
 </template>
 

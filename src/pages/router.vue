@@ -14,7 +14,6 @@
 			return{
 				list:['one','two','three','four','fire'],
 				name:'',
-				direction: ''
 			}
 		},
 		methods:{
@@ -28,7 +27,14 @@
 			}
 		},
 		created(){
-			this.direction=this.$root.sharedState.direction
+			console.log('one-time')
+		},
+		watch:{
+			"$route":function(){
+				// 子级渲染的时候是不会执行构子函数里面的东西
+				// 其实实现的方法就是使用watch来监听这个路由值变化实现对应的效果。
+				console.log('two-time')
+			}
 		}
 	}
 </script>

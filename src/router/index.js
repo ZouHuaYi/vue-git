@@ -27,6 +27,14 @@ export default new Router({
             component:resolve => require(['@/components/Hello'],resolve),
           }
       ]
+    },
+    {
+      path: '/object',
+      component:resolve => require(['@/pages/object'],resolve),
+    },
+    {
+      path: '/vuexload',
+      component:resolve => require(['@/pages/vuexload'],resolve),
     }
   ]
 })

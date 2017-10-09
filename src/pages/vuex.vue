@@ -15,18 +15,18 @@
 		},
 		methods:{
 			changeData(){
-				this.$store.setMessageAction('change data not the hello')
+				this.$stores.setMessageAction('change data not the hello')
 			},
 			clearData(){
-				this.$store.clearMessageAction()
+				this.$stores.clearMessageAction()
 			}
 		},
 		created(){
 			console.log(this.$root.$data);
-			console.log(this.$store)
+			console.log(this.$stores)
 		}
 	}
 </script>
 <style type="text/css" scoped>
-	input{display: block;width: 80%;height: 60px;border: none;background: #09BB07;color: #fff;font-size: 20px;margin: 20px auto;}
+	input{display: block;width: 80%;height: 60px;border: none;background: #2D892C;color: #480A0A;font-size: 20px;margin: 20px auto;}
 </style>
